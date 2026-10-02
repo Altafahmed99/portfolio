@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Syed Altaf - AIML Student, Aspiring Web Developer & AI System Engineer specialized in Deep Learning, NLP, and Full-Stack Web Development.">
+    <meta name="keywords" content="Syed Altaf, AIML, Web Developer, Deepfake Detection, PyTorch, React.js, Node.js, Machine Learning, Computer Vision">
+    <meta name="author" content="Syed Altaf">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Syed Altaf | AI/ML & Web Engineering Portfolio">
+    <meta property="og:description" content="Portfolio of Syed Altaf - AIML Student and Aspiring Web Developer building AI-powered systems and scalable web applications.">
+    <meta property="og:type" content="website">
+
+    <title>Syed Altaf | AI/ML & Web Engineering Portfolio</title>
+
+    <!-- Font Awesome Icons & Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Fixed Navbar -->
+    <header class="navbar-header">
+        <nav class="navbar container" aria-label="Main Navigation">
+            <a href="#" class="nav-brand" aria-label="Syed Altaf Home">
+                <span class="brand-monogram">SA</span>
+                <span class="brand-name">Syed Altaf<span class="accent-dot">.</span></span>
+            </a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#highlights" class="nav-link">Highlights</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="mobile-only-cta">
+                    <a href="assets/resume.pdf" class="btn btn-secondary btn-sm" download target="_blank" rel="noopener">
+                        <i class="fa-solid fa-file-arrow-down"></i> Resume
+                    </a>
+                </li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="assets/resume.pdf" class="btn btn-secondary btn-nav-cta" download target="_blank" rel="noopener">
+                    <i class="fa-solid fa-file-arrow-down"></i> Resume
+                </a>
+                <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-bg-glow"></div>
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="status-dot"></span> Open to Opportunities
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Syed Altaf</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        AIML Student & Aspiring Web Developer
+                    </h2>
+                    <p class="hero-description">
+                        Passionate about building real-world applications including AI-powered systems, web applications, and automation tools with hands-on expertise in Python, PyTorch, JavaScript, and modern full-stack web tech[cite: 1].
+                    </p>
+                    
+                    <div class="hero-meta">
+                        <span class="meta-item"><i class="fa-solid fa-location-dot"></i> Hyderabad, India</span>
+                        <span class="meta-item"><i class="fa-solid fa-envelope"></i> Altafahmef098@gmail.com</span>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fa-solid fa-diagram-project"></i> View Projects
+                        </a>
+                        <a href="assets/resume.pdf" class="btn btn-secondary" download target="_blank" rel="noopener">
+                            <i class="fa-solid fa-download"></i> Download Resume
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fa-solid fa-paper-plane"></i> Contact Me
+                        </a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <span class="social-label">Connect:</span>
+                        <a href="mailto:Altafahmef098@gmail.com" aria-label="Email Syed Altaf" class="social-icon-link">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn Profile" class="social-icon-link">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub Profile" class="social-icon-link">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="tel:+919640914382" aria-label="Phone Call" class="social-icon-link">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-card-wrapper">
+                    <div class="terminal-card">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                            </div>
+                            <div class="terminal-title">altaf_profile.py</div>
+                        </div>
+                        <div class="terminal-body">
+                            <pre><code><span class="code-keyword">class</span> <span class="code-class">Engineer</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(self):
+        self.name = <span class="code-str">"Syed Altaf"</span>
+        self.degree = <span class="code-str">"B.E. CSE (AIML)"</span>[cite: 1]
+        self.cgpa = <span class="code-num">8.5</span>[cite: 1]
+        self.focus = [<span class="code-str">"AI/ML Systems"</span>, <span class="code-str">"Web Dev"</span>, <span class="code-str">"Automation"</span>][cite: 1]
+        
+    <span class="code-keyword">def</span> <span class="code-func">get_core_tech</span>(self):
+        <span class="code-keyword">return</span> [
+            <span class="code-str">"Python"</span>, <span class="code-str">"PyTorch"</span>, <span class="code-str">"OpenCV"</span>,
+            <span class="code-str">"JavaScript"</span>, <span class="code-str">"React.js"</span>, <span class="code-str">"Node.js"</span>
+        ][cite: 1]
+
+<span class="code-comment"># Status: Ready for scalable impact</span>
+profile = Engineer()</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section-padding" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Overview</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card main-about">
+                        <div class="card-icon"><i class="fa-solid fa-user-astronaut"></i></div>
+                        <h3>Professional Summary</h3>
+                        <p>
+                            I am a motivated AIML student and aspiring web developer with hands-on experience in Python, JavaScript, and AI-based projects[cite: 1]. I have a strong interest in building real-world applications including AI-powered systems, web applications, and automation tools[cite: 1].
+                        </p>
+                        <p>
+                            Experienced in project-based learning, API integrations, and developing scalable solutions[cite: 1]. I am currently seeking an opportunity to apply my technical skills in a challenging and growth-oriented environment[cite: 1].
+                        </p>
+                    </div>
+
+                    <div class="about-highlights-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div class="stat-info">
+                                <h4>Academic Standing</h4>
+                                <p class="stat-val">8.5 CGPA</p>
+                                <span class="stat-sub">B.E. CSE (AIML)[cite: 1]</span>
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-brain"></i></div>
+                            <div class="stat-info">
+                                <h4>Specialization</h4>
+                                <p class="stat-val">AI & Machine Learning</p>
+                                <span class="stat-sub">Computer Vision & NLP[cite: 1]</span>
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-code"></i></div>
+                            <div class="stat-info">
+                                <h4>Core Capability</h4>
+                                <p class="stat-val">Full-Stack & AI</p>
+                                <span class="stat-sub">API Integration & Tooling[cite: 1]</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section-padding bg-alt" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Technical Competencies</span>
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Languages -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-code-terminal"></i>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="skills-tags">
+                            <span class="skill-tag"><i class="fa-brands fa-python"></i> Python[cite: 1]</span>
+                            <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript[cite: 1]</span>
+                            <span class="skill-tag"><i class="fa-solid fa-c"></i> C[cite: 1]</span>
+                        </div>
+                    </div>
+
+                    <!-- AI / ML & Data Science -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-robot"></i>
+                            <h3>AI / ML & Computer Vision</h3>
+                        </div>
+                        <div class="skills-tags">
+                            <span class="skill-tag"><i class="fa-solid fa-fire"></i> PyTorch[cite: 1]</span>
+                            <span class="skill-tag"><i class="fa-solid fa-eye"></i> OpenCV[cite: 1]</span>
+                            <span class="skill-tag"><i class="fa-solid fa-network-wired"></i> CNN (Convolutional Neural Networks)[cite: 1]</span>
+                            <span class="skill-tag"><i class="fa-solid fa-comments"></i> NLP (Natural Language Processing)[cite: 1]</span>
+                        </div>
+                    </div>
+
+                    <!-- Frontend Development -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <h3>Frontend Stack</h3>
+                        </div>
+                        <div class="skills-tags">
+                            <span class="skill-tag"><i class="fa-brands fa-react"></i> React.js[cite: 1]</span>
+                            <span class="skill-tag"><i class="fa-solid fa-N"></i> Next.js[cite: 1]</span>
+                            <span class="skill-tag"><i class="fa-solid fa-wind"></i> Tailwind CSS[cite: 1]</span>
+                            <span class="skill-tag"><i class="fa-solid fa-pepper-hot"></i> Flask[cite: 1]</span>
+                        </div>
+                    </div>
+
+                    <!-- Backend & Databases -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-server"></i>
+                            <h3>Backend & Databases</h3>
+                        </div>
+                        <div class="skills-tags">
+                            <span class="skill-tag"><i class="fa-brands fa-node-js"></i> Node.js[cite: 1]</span>
+                            <span class="skill-tag"><i class="fa-solid fa-route"></i> Express.js[cite: 1]</span>
+                            <span class="skill-tag"><i class="fa-solid fa-database"></i> MongoDB[cite: 1]</span>
+                            <span class="skill-tag"><i class="fa-solid fa-plug"></i> REST API Integration[cite: 1]</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section-padding" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Portfolio</span>
+                    <h2 class="section-title">Featured AI & Web Projects</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-card-header">
+                            <div class="project-type"><i class="fa-solid fa-shield-halved"></i> Computer Vision & Deep Learning</div>
+                            <span class="project-date">Sep 2025[cite: 1]</span>
+                        </div>
+                        <h3 class="project-title">Deepfake Detection System</h3>
+                        <p class="project-description">
+                            Developed a deep learning-based system engineered to detect manipulated or AI-generated media using Convolutional Neural Networks (CNNs)[cite: 1]. Implemented OpenCV for frame extraction and video preprocessing, with model training conducted in PyTorch[cite: 1]. Evaluated classification performance rigorously using accuracy and F1-score[cite: 1].
+                        </p>
+                        
+                        <div class="project-highlights">
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-check-circle"></i> Frame extraction and video preprocessing pipeline via OpenCV[cite: 1].
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-check-circle"></i> Binary classification (Authentic vs. Deepfake) trained on PyTorch[cite: 1].
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-check-circle"></i> Evaluated using Accuracy and F1-Score metrics[cite: 1].
+                            </div>
+                        </div>
+
+                        <div class="project-tech-stack">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">PyTorch</span>
+                            <span class="tech-badge">OpenCV</span>
+                            <span class="tech-badge">CNN</span>
+                            <span class="tech-badge">Deep Learning</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-sm btn-secondary">
+                                <i class="fa-brands fa-github"></i> Repository
+                            </a>
+                            <button class="btn btn-sm btn-outline project-details-btn" data-project="deepfake">
+                                <i class="fa-solid fa-circle-info"></i> Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-card-header">
+                            <div class="project-type"><i class="fa-solid fa-comments"></i> Natural Language Processing</div>
+                            <span class="project-date">Oct 2025[cite: 1]</span>
+                        </div>
+                        <h3 class="project-title">Sentiment Analysis on Social Media Data</h3>
+                        <p class="project-description">
+                            Built a complete sentiment analysis pipeline to classify social media text as positive, negative, or neutral using Natural Language Processing (NLP) techniques[cite: 1]. Utilized Python libraries for text preprocessing including tokenization, stop-word removal, and vectorization[cite: 1]. Implemented machine learning models to analyze social posts and visualize sentiment trends[cite: 1].
+                        </p>
+
+                        <div class="project-highlights">
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-check-circle"></i> Preprocessing pipeline: Tokenization, Stop-word removal, Vectorization[cite: 1].
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-check-circle"></i> Multiclass Sentiment Classification (Positive, Neutral, Negative)[cite: 1].
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-check-circle"></i> Trend visualization and analytics on social media datasets[cite: 1].
+                            </div>
+                        </div>
+
+                        <div class="project-tech-stack">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">NLP</span>
+                            <span class="tech-badge">Machine Learning</span>
+                            <span class="tech-badge">Data Preprocessing</span>
+                            <span class="tech-badge">Data Visualization</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-sm btn-secondary">
+                                <i class="fa-brands fa-github"></i> Repository
+                            </a>
+                            <button class="btn btn-sm btn-outline project-details-btn" data-project="sentiment">
+                                <i class="fa-solid fa-circle-info"></i> Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section-padding bg-alt" id="education">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Academic Background</span>
+                    <h2 class="section-title">Education</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Education 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="degree-title">Bachelor of Engineering in Computer Science Engineering (AIML)</h3>
+                                    <h4 class="institution-name">Nawab Shah Alam Khan College of Engineering & Technology (NSAKCET)</h4>
+                                </div>
+                                <div class="timeline-meta">
+                                    <span class="badge-timeline">Sep 2023 - Present</span>
+                                    <span class="badge-score">CGPA: 8.5</span>
+                                </div>
+                            </div>
+                            <p class="timeline-description">
+                                Specialized focus on Artificial Intelligence, Machine Learning algorithms, Computer Vision, Natural Language Processing, Data Structures, Software Engineering, and Web Application Frameworks[cite: 1].
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Education 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"><i class="fa-solid fa-school"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="degree-title">Intermediate in MPC (Maths, Physics, Chemistry)</h3>
+                                    <h4 class="institution-name">Sri Gayatri Jr. College</h4>
+                                </div>
+                                <div class="timeline-meta">
+                                    <span class="badge-timeline">Completed 2023</span>
+                                    <span class="badge-score">Score: 89%</span>
+                                </div>
+                            </div>
+                            <p class="timeline-description">
+                                Rigorous foundation in Mathematics, Physics, and Chemistry, cultivating strong analytical, problem-solving, and logical reasoning skills[cite: 1].
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="section-padding" id="certifications">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Credentials & Training</span>
+                    <h2 class="section-title">Certifications</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="certifications-grid">
+                    <!-- Cert 1 -->
+                    <div class="cert-card">
+                        <div class="cert-provider-logo">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <div class="cert-details">
+                            <span class="cert-issuer">IBM</span>
+                            <h3 class="cert-title">Introduction to Agile Development and Scrum</h3>
+                            <p class="cert-desc">Acquired formal knowledge in Agile principles, iterative engineering practices, Scrum roles, sprint planning, and team collaboration workflows[cite: 1].</p>
+                        </div>
+                    </div>
+
+                    <!-- Cert 2 -->
+                    <div class="cert-card">
+                        <div class="cert-provider-logo">
+                            <i class="fa-brands fa-microsoft"></i>
+                        </div>
+                        <div class="cert-details">
+                            <span class="cert-issuer">Microsoft</span>
+                            <h3 class="cert-title">Introduction to Generative AI for Developers with Copilot</h3>
+                            <p class="cert-desc">Explored developer workflows with Generative AI tools, prompt engineering techniques, and leveraging GitHub Copilot for code creation and optimization[cite: 1].</p>
+                        </div>
+                    </div>
+
+                    <!-- Cert 3 -->
+                    <div class="cert-card">
+                        <div class="cert-provider-logo">
+                            <i class="fa-solid fa-cube"></i>
+                        </div>
+                        <div class="cert-details">
+                            <span class="cert-issuer">NexGen Coders</span>
+                            <h3 class="cert-title">Build, Test and Deploy ML Models</h3>
+                            <p class="cert-desc">Practical hands-on certification covering end-to-end Machine Learning lifecycles from dataset preparation to model testing and cloud/API deployment[cite: 1].</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights / Key Strengths Section -->
+        <section class="section-padding bg-alt" id="highlights">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Value Proposition</span>
+                    <h2 class="section-title">Career Highlights & Key Strengths</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fa-solid fa-brain"></i></div>
+                        <h3>AI-Driven Solutions</h3>
+                        <p>Experience in designing end-to-end Machine Learning and Computer Vision pipelines, translating complex algorithms into functional models[cite: 1].</p>
+                    </div>
+
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fa-solid fa-cubes"></i></div>
+                        <h3>Modern Web Engineering</h3>
+                        <p>Capable of engineering modern responsive web interfaces using JavaScript, React.js, and Tailwind CSS coupled with Node.js backends[cite: 1].</p>
+                    </div>
+
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fa-solid fa-diagram-next"></i></div>
+                        <h3>Agile & Agile Mindset</h3>
+                        <p>Certified in IBM Agile & Scrum practices, prioritizing clean modular architecture, API integration, and iterative delivery[cite: 1].</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section-padding" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Let's collaborate on your next project</h3>
+                        <p>
+                            I am actively seeking opportunities in Software Development, Web Development, and AI/ML Engineering[cite: 1]. Feel free to reach out directly via email or call.
+                        </p>
+
+                        <div class="contact-methods">
+                            <a href="mailto:Altafahmef098@gmail.com" class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <span class="contact-label">Email</span>
+                                    <span class="contact-value">Altafahmef098@gmail.com</span>
+                                </div>
+                            </a>
+
+                            <a href="tel:+919640914382" class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <span class="contact-label">Phone</span>
+                                    <span class="contact-value">+91 9640914382</span>
+                                </div>
+                            </a>
+
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <span class="contact-label">Location</span>
+                                    <span class="contact-value">Hyderabad, Telangana, India</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-socials-row">
+                            <a href="https://linkedin.com" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+                                <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                            </a>
+                            <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contact-form" onsubmit="return false;">
+                        <div class="form-group">
+                            <label for="form-name">Your Name</label>
+                            <input type="text" id="form-name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">Your Email</label>
+                            <input type="email" id="form-email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-subject">Subject</label>
+                            <input type="text" id="form-subject" placeholder="Project Discussion / Job Opportunity" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Message</label>
+                            <textarea id="form-message" rows="4" placeholder="Write your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                        <div class="form-status" id="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#" class="nav-brand">
+                    <span class="brand-monogram">SA</span>
+                    <span class="brand-name">Syed Altaf</span>
+                </a>
+                <p>Motivated AIML Student & Aspiring Web Developer[cite: 1]</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Syed Altaf. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top-btn" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Project Details Drawer / Modal -->
+    <div class="modal-overlay" id="project-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close-btn" aria-label="Close modal">&times;</button>
+            <div id="modal-body">
+                <!-- Injected via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
